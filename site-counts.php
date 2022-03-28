@@ -16,4 +16,4 @@ if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
 	require_once __DIR__ . '/vendor/autoload.php';
 }
 
-add_action( 'plugins_loaded', [ new Plugin( __FILE__ ), 'init' ] );
+add_action( 'plugins_loaded', array( new Plugin( __FILE__ ), 'init' ) );
